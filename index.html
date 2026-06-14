@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ERP الشامل - نظام متكامل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شاشة تسجيل الدخول -->
+    <div id="loginScreen" class="login-container">
+        <div class="login-card">
+            <h2>تسجيل الدخول إلى ERP</h2>
+            <input type="email" id="loginEmail" placeholder="البريد الإلكتروني" autocomplete="off">
+            <input type="password" id="loginPassword" placeholder="كلمة المرور">
+            <button id="loginButton">دخول</button>
+            <button id="registerButton" class="secondary">إنشاء حساب جديد (مدير)</button>
+        </div>
+    </div>
+
+    <!-- التطبيق بعد تسجيل الدخول -->
+    <div id="appScreen" style="display:none;">
+        <div class="sidebar" id="sidebar">
+            <h3>قائمة ERP</h3>
+            <button class="menu-item active" data-view="dashboard">📊 لوحة التحكم</button>
+            <button class="menu-item" data-view="pos">🛒 نقطة البيع</button>
+            <button class="menu-item" data-view="products">📦 المخزون والمنتجات</button>
+            <button class="menu-item" data-view="customers">👥 العملاء</button>
+            <button class="menu-item" data-view="suppliers">🚚 الموردين</button>
+            <button class="menu-item" data-view="sales">🧾 المبيعات والفواتير</button>
+            <button class="menu-item" data-view="reports">📈 التقارير</button>
+            <button class="menu-item" data-view="settings">⚙️ الإعدادات</button>
+            <button id="logoutBtn" class="menu-item danger">🚪 تسجيل خروج</button>
+        </div>
+        <div class="main-content">
+            <div id="dashboardView" class="view active">📊 لوحة التحكم (ستظهر الإحصائيات قريباً)</div>
+            <div id="posView" class="view">🛒 نقطة البيع (قريباً)</div>
+            <div id="productsView" class="view">📦 إدارة المنتجات (قريباً)</div>
+            <div id="customersView" class="view">👥 العملاء (قريباً)</div>
+            <div id="suppliersView" class="view">🚚 الموردين (قريباً)</div>
+            <div id="salesView" class="view">🧾 المبيعات (قريباً)</div>
+            <div id="reportsView" class="view">📈 التقارير (قريباً)</div>
+            <div id="settingsView" class="view">⚙️ الإعدادات (قريباً)</div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
