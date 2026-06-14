@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', sans-serif;
+}
+body {
+    background: #f4f6f9;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-card {
+    background: white;
+    padding: 30px;
+    border-radius: 28px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 40px;
+    border: 1px solid #ddd;
+}
+button {
+    background: #1e3c72;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+button.secondary {
+    background: #6c757d;
+}
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    background: #1e2a3a;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+.main-content {
+    margin-right: 260px;
+    padding: 20px;
+}
+.menu-item {
+    background: none;
+    border: none;
+    color: white;
+    text-align: right;
+    margin: 8px 0;
+    padding: 12px;
+    width: 100%;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.menu-item.active, .menu-item:hover {
+    background: #2c3e4e;
+}
+.danger {
+    background: #dc3545;
+}
+.view {
+    display: none;
+    background: white;
+    border-radius: 28px;
+    padding: 20px;
+    min-height: 80vh;
+}
+.view.active {
+    display: block;
+}
+@media (max-width: 768px) {
+    .sidebar { width: 220px; }
+    .main-content { margin-right: 220px; }
+}
